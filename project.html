@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My projects</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="project">
+        <div class="head"><h1> "ABOUT MY PROJECTS" </h1>
+            </div>
+        <div class="boxes">
+        <div class="box p1"> <h1>Tic-Tac-Toe</h1>
+            <h3> Short note: </h3>
+        <p>Tic-Tac-Toe is a classic two-player strategy game implemented using the C programming language. This project features a simple command-line interface where players take turns marking their symbols ('X' or 'O') on a 3x3 grid. The program ensures valid moves, checks for a winner after each turn, and declares the result accordingly. It demonstrates my ability to apply programming logic, use arrays for grid representation, and implement game logic effectively.</p>
+             <h3> Description: </h3>
+        <p>Tic-Tac-Toe is a classic two-player game that requires strategic thinking and decision-making. This project is a command-line implementation of the game using the C programming language, demonstrating my ability to develop interactive applications with structured programming concepts. The game follows the standard 3x3 grid format, where two players alternately place their respective marks ('X' and 'O') on the board. The primary objective is to align three marks in a row, column, or diagonal to win the game. If all cells are filled without a winner, the game ends in a draw.
+
+            <br>The implementation is structured using functions to ensure modularity and ease of understanding. A 2D array is used to represent the game board, and functions handle board initialization, user input validation, board display, and winner detection. The program continuously checks for a win condition after each move, ensuring real-time feedback for the players. Additionally, input validation prevents overwriting of already occupied cells, ensuring fair gameplay. The game loops until a player wins or the board is full, after which the result is displayed, and players have the option to restart the game.
+            
+            <br>This project highlights my ability to work with fundamental programming constructs such as loops, conditional statements, arrays, and functions. It also demonstrates my problem-solving skills and logical thinking in implementing a real-world game scenario. By developing this project, I have gained a deeper understanding of handling user interactions, managing game flow efficiently, and structuring code in a readable and maintainable manner. This Tic-Tac-Toe game serves as a strong example of my ability to develop interactive console applications and apply core programming concepts effectively.</p>
+        <p><b><span style="color:#0202117e">Working Principle</span></b>
+            <br>
+            <ol class="order-list">
+            <li>A 3x3 grid is represented using a 2D character array.</li>
+            <li>Players take turns choosing positions on the board.</li>
+            <li>The program checks if the chosen position is valid (i.e., not already occupied).</li>
+            <li>After each move, the game checks for a win condition (horizontal, vertical, or diagonal match).</li>
+            <li>If a player wins, the game displays a victory message; if the grid is full without a winner, it declares a draw.</li>
+            <li>program asks if the players want to restart the game.</li>
+        </ol></p>
+        <p><b><span style="color:#0202117e" >Functions and Their Purpose</span></b>
+            <br>
+            <ol class="order-list 1">
+            <li>displayBoard() → Prints the Tic-Tac-Toe board with current symbols.</li>
+            <li>void playerMove(int player) → Allows the current player to input their move and validates it.</li>
+            <li>int checkWinner() → Checks rows, columns, and diagonals for a winning combination.</li>
+            <li>void resetBoard() → Resets the board for a new game session.</li>
+        </ol></p>
+        </div>
+        <div class="box p3"> <h1>Student Management System</h1>
+            <h3> Short note: </h3>
+        <p>The Student Management System is a console-based application developed in C to efficiently manage student records. It allows users to perform essential operations such as adding, displaying, searching, updating, and deleting student details, including name, roll number, marks, and other relevant information. The system uses file handling to store data persistently, ensuring that records are saved even after the program is closed. This project demonstrates my ability to work with data structures, file handling, and user interaction in C programming.</p>
+        <h3> Description: </h3>
+        <p>The Student Management System is a simple yet effective console-based application designed to organize and manage student records efficiently. Developed in C, this project provides functionalities to add new student records, display existing records, search for a student using a roll number or name, update details, and delete records as needed. The system is structured to handle multiple student entries and ensures data integrity through input validation.
+
+            <br>One of the key features of this system is its use of file handling, which allows student records to be stored in a text or binary file. This ensures that data is not lost when the program is restarted, making the system more practical and useful. The application uses structured programming concepts, including arrays, functions, and file handling operations like reading, writing, appending, and modifying files.
+            
+            <br>This project highlights my proficiency in C programming, problem-solving, and efficient data management techniques. It also demonstrates my ability to create functional applications that involve file operations, structured data storage, and interactive user interfaces. By developing this system, I have gained valuable experience in handling real-world applications and improving my logical thinking in software development.</p>
+            <p><b><span style="color:#0202117e">Working Principle</span></b>
+                <br>
+                <ol class="order-list">
+                <li>The system initializes by loading stored student data from a file (if available).</li>
+                <li>Users can add new students, entering details like name, roll number, marks, and course.</li>
+                <li>Users can view all student records, which are fetched from memory and displayed in a formatted table.</li>
+                <li>Users can search for a student using their roll number; if found, the details are displayed.</li>
+                <li>Users can update existing student records, modifying specific fields without affecting others.</li>
+                <li>Users can delete a student record, permanently removing the student’s details from the file.</li>
+                <li>The program ensures all operations update the file correctly, maintaining data persistence across sessions.</li>
+            </ol></p>
+            <p><b><span style="color:#0202117e" >Functions and Their Purpose</span></b>
+                <br>
+                <ol class="order-list 1">
+                <li>void addStudent() → Collects student details and stores them in a file.</li>
+                <li>void displayStudents() → Reads and displays all student records from the file.</li>
+                <li>void searchStudent(int rollNo) → Searches for a student by roll number and prints details if found.</li>
+                <li>void updateStudent(int rollNo) → Locates a student’s record and modifies specific fields.</li>
+                <li>void deleteStudent(int rollNo) → Removes a student’s record from the file.</li>
+                <li>void saveToFile() → Saves all student records to a file for persistent storage.</li>
+                <li>void loadFromFile() → Loads existing student records from the file into memory.</li>
+            </ol></p>
+        </div>
+
+        <div class="box p4"> <h1>To-Do List</h1>
+            <h3> Short note: </h3>
+        <p>A To-Do List is a simple web application that allows users to add, delete, and mark tasks as completed. It uses Local Storage to save tasks, ensuring they persist even after the page is reloaded. The project is built using HTML, CSS, and JavaScript, demonstrating JavaScript's DOM manipulation and event handling.</p>
+        <h3> Description: </h3>
+        <p>The To-Do List with Local Storage is a small yet essential web project for beginners in web development. It allows users to create a task list where they can add new tasks, delete completed ones, and mark tasks as done. The key feature is the use of Local Storage, which ensures that even after refreshing the page or closing the browser, the task list remains intact.</p>
+
+        <p><b><span style="color:#0202117e">Working Principle</span></b>
+            <br>
+            <ol class="order-list">
+            <li>The To-Do List with Local Storage operates by dynamically creating and managing tasks in a structured list format. Users can add tasks, which are displayed instantly in the UI. When a task is marked as completed or deleted, the changes are updated both in the UI and Local Storage.The key mechanism behind Local Storage:</li>
+               <li>When a task is added, it's saved in Local Storage as an array.</li>
+               <li>When the page loads, tasks are retrieved from Local Storage and displayed.</li>
+               <li>When a task is removed, the Local Storage is updated accordingly.</li>
+        </ol></p>
+        <p><b><span style="color:#0202117e" >Functions and Their Purpose</span></b>
+            <br>
+            <ol class="order-list 1">
+            <li> <b>Adding a Task: </b>
+                <br>
+                The user enters a task in the input field and clicks "Add".<br>
+                JavaScript captures the input value and creates a new list element.<br>
+                This new task is stored in Local Storage as part of an array.<br>
+                The updated list is displayed in the UI.</li>
+            <li>
+                <b>Marking a Task as Completed:</b>
+                <br>
+                When a task is clicked, JavaScript toggles the completed class.<br>
+                The style changes (e.g., strikethrough effect) to indicate completion.<br>
+                This change is also updated in Local Storage.
+            </li>
+            <li>
+                <b>Deleting a Task:</b>
+                <br>
+                When the delete button is clicked, JavaScript removes the corresponding list from the DOM.<br>
+                The task is also removed from Local Storage.
+            </li>
+            <li>
+                <b>Retrieving Data from Local Storage on Page Load:</b>
+                <br>
+                When the page reloads, JavaScript retrieves the saved task list from Local Storage.<br>
+                The tasks are re-created and displayed in the UI.
+            </li>
+       </ol></p>
+        </div>
+        <div class="box p2"> <h1>Weather Application</h1>
+            <h3> Short note: </h3>
+        <p>The Weather Application is a web-based project built using HTML, CSS, and JavaScript. It fetches real-time weather data from an API and displays information such as temperature, humidity, wind speed, and weather conditions for a given location. The application features a user-friendly interface with a responsive design, making it accessible across different devices. It demonstrates my ability to integrate APIs, handle user input, and create interactive web applications.</p>
+        <h3> Description: </h3>
+        <p>The Weather Application is an interactive web-based tool designed to provide real-time weather updates for any location. Built using HTML, CSS, and JavaScript, this project utilizes an external weather API to fetch and display current weather conditions, including temperature, humidity, wind speed, and a weather icon representing the conditions. Users can input a city name, and the application dynamically retrieves the corresponding weather data.
+
+            <br>The front-end is designed with a clean and responsive UI, ensuring a smooth user experience across different devices. CSS is used to enhance the visual appeal with modern design elements, while JavaScript handles API integration, user input validation, and data presentation. The application updates dynamically without requiring a page reload, demonstrating efficient DOM manipulation techniques.
+            
+            <br>This project showcases my skills in front-end web development, including API handling, asynchronous JavaScript (fetch API), event handling, and responsive design. It also highlights my ability to create real-world applications that interact with external data sources and provide a seamless user experience. By developing this weather app, I have strengthened my understanding of front-end technologies and practical API integration.</p>
+        <p><b><span style="color:#0202117e">Working Principle</span></b>
+            <br>
+            <ol class="order-list">
+            <li>The user enters a city name in the input field and clicks the search button.</li>
+            <li>JavaScript captures the user input and calls a weather API (e.g., OpenWeatherMap API) using the fetch() function.</li>
+            <li>The API returns JSON data, which includes weather parameters such as temperature, humidity, and wind speed.</li>
+            <li>The JavaScript program extracts relevant data from the API response and dynamically updates the webpage to display the weather information.</li>
+            <li>The UI updates smoothly using DOM manipulation, and error handling ensures the application gracefully manages invalid city inputs.</li>
+        </ol></p>
+        <p><b><span style="color:#0202117e" >Functions and Their Purpose</span></b>
+            <br>
+            <ol class="order-list 1">
+            <li>fetchWeatherData(cityName) → Calls the weather API with the given city name and retrieves weather data.</li>
+            <li>displayWeather(data) → Extracts required weather details and updates the webpage dynamically.</li>
+            <li>handleErrors() → Manages API errors, such as invalid city names or network issues.</li>
+            <li>convertTemperature(temp) → Converts temperature from Kelvin to Celsius or Fahrenheit.</li>
+       </ol></p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!----- Footer ----->
+
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/share/ne4x38tBUpetu8Xd/?mibextid=qi2Omg">
+                <i class="fa fa-facebook fb"></i></a> 
+            <a href="https://x.com/Rahini_26?t=-4SMOhJIcrsKZ_8C7yHXog&s=09">
+                <i class="fa fa-twitter x "></i></a> 
+            <a href="https://www.instagram.com/_rahi_26?igsh=ZHBkNjB5eDZyajk5">
+                <i class="fa fa-instagram insta" aria-hidden="true"></i></a> 
+            <a href="https://github.com/rahinimanikandan">
+              <i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <div class="last">
+                <div class="lastCont">
+               <p>@Copyright Rahini 2025</p> 
+               <p>Design by <a href="">Rahini</a></p>
+               <p>Developed by <a href="">Rahini</a></p></div>
+            </div>
+    </footer>
+    </div>
+    
+</body>
+</html>
