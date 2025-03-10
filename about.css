@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    text-decoration: none;
+    list-style-type: none;
+    background: linear-gradient(to top, #0b0b18, #111136);
+}
+.navigation{
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    backdrop-filter: blur(100px);
+    z-index: 1000;
+}
+.navigation name{
+    position: absolute;
+    top: 17px;
+    left: 12%;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-bar{
+    float: right;
+    margin: 5px;
+}
+.nav-bar ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 20px;
+}
+.nav-bar ul li a{
+    position: relative;
+    color: white;
+    font-size: 22px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-bar ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav-bar ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.button1{
+    height: 50px;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.button1 a{
+    text-decoration: none;
+    color: black;
+}
+.button1:hover{
+    background-color: brown;
+    transition: all .3s linear;
+}
+.button1:hover a{
+    color: white;
+}
+.name {
+    width: 100%;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.name h1 {
+    font-size: 30px;
+    color: #D8BFD8;
+}
+.name p {
+    padding: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: #fff;
+}
+.skills h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 80;
+    background: linear-gradient(to right, #ff007f, #8a2be2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.skills p {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+}
+.skills-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 300px;
+}
+.skills-icons img {
+    height: 60px;
+    width: 60px;
+}
+.more{
+    display: block;
+    margin: 20px auto 0px auto;
+    height: 50px;
+    padding: 10px;
+    background: linear-gradient(to right, #b9045f, #571496); 
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: palevioletred;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.more a{
+    text-decoration: none;
+    color: inherit;
+}
+.more:hover{
+    background: linear-gradient(to left, #b9045f, #571496);
+    color: plum;
+    transition: 5s step-start linear;
+}
+.btn{
+    position: absolute;
+    top: 30px;
+    right: 16px;
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+footer .icons {
+row-gap: 30px;
+}
+footer .icons a{
+padding: 0px 3px;
+}
+footer .icons a i{
+font-size: 30px;
+color: white;
+}
+footer .icons a i:hover {
+    background-color: white;
+    color: black;
+    transition: all .5s linear;
+}
+footer .lastCont{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    gap: 10px;
+    margin-top: 10px;
+    }
+
+@media screen and (max-width:1032px) {
+    .btn {
+        display: flex;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .nav-bar ul li,
+    .button1 {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-bar.active {
+        display: flex;
+        margin-top: 80px;
+    }
+    body.menu-open .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    body.menu-open .about{
+        display: none;
+    }
+    body.menu-open footer{
+        display: none;
+    }
+    .skills-icons img{
+        height: 40px;
+        width: 40px;
+    }
+    .skills h2{
+        margin-left: 40px;
+    }
+    .skills p{
+        font-size: 25px;
+    }    
+}

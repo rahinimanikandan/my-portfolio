@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    text-decoration: none;
+    list-style-type: none;
+    background: linear-gradient(to top,#0b0b18,#111136);
+    cursor: default;
+}
+.navigation{
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    backdrop-filter: blur(100px);
+    z-index: 1000;
+}
+.navigation name{
+    position: absolute;
+    top: 17px;
+    left: 12%;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-bar{
+    float: right;
+    margin: 5px;
+}
+.nav-bar ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 20px;
+}
+.nav-bar ul li a{
+    position: relative;
+    color: white;
+    font-size: 22px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-bar ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav-bar ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.button1{
+    height: 50px;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.button1 a{
+    text-decoration: none;
+    color: black;
+}
+.button1:hover{
+    background-color: brown;
+    transition: all .3s linear;
+}
+.button1:hover a{
+    color: white;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+}
+.text{
+    font-size: 30px;
+    width: 0ch;
+    margin-top: 150px;
+    background: linear-gradient(to right,#ff007f,#8a2be2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    padding-left: 100px;
+    animation: typing 3s steps(18) infinite;
+}
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 49ch;
+    }
+}
+.intro {
+    padding-left: 100px;
+    margin-top: 20px;
+    color:#fff;
+    max-width: 600px;
+    font-weight: 400;
+}
+.intro p {
+    display: block;  
+    max-width: 600px; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    line-height: 1.9; 
+}
+.button2{
+    height: 40px;
+    width: 90px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid black;
+    padding: 5px;
+    margin-top: 20px;
+}
+.button2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.button2:hover{
+    background-color: brown;
+    transition: all .3s linear;
+}
+.img img{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+.btn{
+    position: absolute;
+    top: 30px;
+    right: 16px;
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 10px 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+footer .icons {
+row-gap: 30px;
+}
+footer .icons a{
+padding: 0px 3px;
+}
+footer .icons a i{
+font-size: 30px;
+color: white;
+}
+footer .icons a i:hover {
+    background-color: white;
+    color: black;
+    transition: all .5s linear;
+}
+footer .lastCont{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    gap: 10px;
+    margin-top: 10px;
+    }
+/* About*/
+.name {
+    width: 100%;
+    text-align: center;
+    margin-top: 250px;
+}
+.name h1 {
+    font-size: 30px;
+    color: #D8BFD8;
+}
+.name p {
+    padding: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: #fff;
+}
+.skills h2 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 120;
+    background: linear-gradient(to right, #ff007f, #8a2be2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    padding: 5px 50px;
+}
+.skills p {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+.icon-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 300px;
+}
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+.more{
+    display: block;
+    margin: 20px auto 0px auto;
+    height: 50px;
+    padding: 10px;
+    background: linear-gradient(to right, #b9045f, #571496); 
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: palevioletred;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.more a{
+    text-decoration: none;
+    color: inherit;
+}
+.more:hover{
+    background: linear-gradient(to left, #b9045f, #571496);
+    color: plum;
+    transition: 5s step-start linear;
+}
+/* Service */
+.service h1{
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    background: linear-gradient(to right,#ff007f,#8a2be2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 120;
+    padding: 50px 50px 10px 50px;
+}
+.service p{
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: justify;
+}
+/* Contact */
+.head {
+    width: 100%;
+}
+.contact {
+    background: linear-gradient(to right, #ff007f, #8a2be2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'poppins';
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    color: #fff;
+    margin-top: 45px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.box {
+    text-align: center;
+}
+.box img {
+    height: 100px;
+    width: 100px;
+    opacity: 0.8;
+    gap: 40px;
+}
+.box p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+@media screen and (max-width:1213px){
+        .text{
+            animation: type 3s steps(18) infinite;
+            width: 0ch;
+        }
+        .text h1{
+            font-size: 30px;
+        }
+        @keyframes type {
+            0%{
+                width: 0ch;
+            }
+            50%{
+                width: 28ch;
+            }
+        }
+}
+@media screen and (max-width:1032px) {
+    .img img {
+        height: 500px;
+        width: 500px;
+    }
+    .btn {
+        display: flex;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .nav-bar ul li,
+    .button1 {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-bar.active {
+        display: flex;
+        margin-top: 80px;
+    }
+    body.menu-open .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    body.menu-open .main {
+        display: none;
+    }
+    body.menu-open footer{
+        display: none;
+    }
+    body.menu-open .about{
+        display: none;
+    }
+    body.menu-open .service{
+        display: none;
+    }
+    body.menu-open .contact{
+        display: none;
+    }
+    body.menu-open .container{
+        display: none;
+    }
+}
+@media screen and (max-width:878px){
+    .name h1{
+        padding-left: 10px;
+    }
+    .icon-skills .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .text{
+        margin-top: 30px;
+    }
+    .main{
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .img img{
+        position: static;
+        width: 300px;
+        height: 300px;
+        max-width: 300px;
+      }
+      .text{
+        padding-left: 10px;
+      }
+      .intro{
+        padding-left: 10px;
+      }
+      .intro button{
+        margin-left: 10px;
+      }
+      .text{
+        animation: typed 3s steps(18) infinite;
+        width: 0ch;
+    }
+    .text h1{
+        font-size: 26px;
+    }
+    @keyframes typed {
+        0%{
+            width: 0ch;
+        }
+        50%{
+            width: 19ch;
+        }
+    }
+    .name{
+        margin-top: 50px;
+        text-align: justify;
+        padding-left: 5px;
+    }
+}
